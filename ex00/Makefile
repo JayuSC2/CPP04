@@ -6,7 +6,7 @@
 #    By: juitz <juitz@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/12/20 18:42:37 by juitz             #+#    #+#              #
-#    Updated: 2024/12/23 12:27:53 by juitz            ###   ########.fr        #
+#    Updated: 2024/12/23 12:54:27 by juitz            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,9 @@ CFLAGS = -Wall -Wextra -Werror -std=c++98
 SRCS =	main.cpp\
 		Animal.cpp\
 		Dog.cpp\
-		Cat.cpp
+		Cat.cpp\
+		WrongAnimal.cpp\
+		WrongCat.cpp
 
 OBJS = $(SRCS:.cpp=.o)
 
