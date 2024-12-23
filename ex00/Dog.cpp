@@ -6,7 +6,7 @@
 /*   By: juitz <juitz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/20 19:19:10 by juitz             #+#    #+#             */
-/*   Updated: 2024/12/20 19:21:03 by juitz            ###   ########.fr       */
+/*   Updated: 2024/12/23 12:23:46 by juitz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,17 @@
 
 Dog::Dog() : Animal()
 {
-	std::cerr << "Dog default constructor called" << std::endl;
+	std::cout << "Dog default constructor called" << std::endl;
 }
 
-Dog::Dog(const Dog &copy)
+Dog::Dog(const std::string &type) : Animal("Dog")
 {
-	std::cerr << "Dog copy constructor called" << std::endl;
+	std::cout << "Dog type constructor called" << std::endl;
+}
+
+Dog::Dog(const Dog &copy) : Animal(copy)
+{
+	std::cout << "Dog copy constructor called" << std::endl;
 	*this = copy;
 }
 
@@ -28,11 +33,16 @@ Dog &Dog::operator=(const Dog &other)
 {
 	if (this != &other)
 		this->type = other.type;
-	std::cerr << "Dog copy assignment operator called" << std::endl;
+	std::cout << "Dog copy assignment operator called" << std::endl;
 	return (*this);
 }
 
 Dog::~Dog()
 {
-	std::cerr << "Dog destructor called" << std::endl;
+	std::cout << "Dog destructor called" << std::endl;
+}
+
+void Dog::makeSound() const
+{
+	std::cout << "Woof woof!" << std::endl;
 }

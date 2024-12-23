@@ -1,29 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Cat.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: juitz <juitz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/20 19:05:00 by juitz             #+#    #+#             */
-/*   Updated: 2024/12/23 12:37:35 by juitz            ###   ########.fr       */
+/*   Created: 2024/12/23 12:03:55 by juitz             #+#    #+#             */
+/*   Updated: 2024/12/23 12:31:47 by juitz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#pragma once
 #include "Animal.hpp"
-#include "Dog.hpp"
-#include "Cat.hpp"
 
-int main()
+class Cat : public Animal
 {
-	const Animal* meta = new Animal();
-	const Animal* j = new Dog();
-	const Animal* i = new Cat();
-	std::cout << j->getType() << " " << std::endl;
-	std::cout << i->getType() << " " << std::endl;
-	i->makeSound();
-	j->makeSound();
-	meta->makeSound();
-	
-	return (0);
-}
+	public:
+		Cat();
+		Cat(const std::string &type);
+		Cat(const Cat &copy);
+		~Cat();
+
+		Cat &operator=(const Cat &other);
+
+		void makeSound() const override;
+};

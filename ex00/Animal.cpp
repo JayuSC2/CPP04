@@ -6,7 +6,7 @@
 /*   By: juitz <juitz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/20 18:51:37 by juitz             #+#    #+#             */
-/*   Updated: 2024/12/20 19:06:41 by juitz            ###   ########.fr       */
+/*   Updated: 2024/12/23 12:33:08 by juitz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,17 @@
 
 Animal::Animal()
 {
-	std::cerr << "Animal default constructor called" << std::endl;
+	std::cout << "Animal default constructor called" << std::endl;
+}
+
+Animal::Animal(const std::string &type) : type(type)
+{
+	std::cout << "Animal type constructor called" << std::endl;
 }
 
 Animal::Animal(const Animal &copy)
 {
-	std::cerr << "Animal copy constructor called" << std::endl;
+	std::cout << "Animal copy constructor called" << std::endl;
 	*this = copy;
 }
 
@@ -27,11 +32,26 @@ Animal &Animal::operator=(const Animal &other)
 {
 	if (this != &other)
 		this->type = other.type;
-	std::cerr << "Animal copy assignment operator called" << std::endl;
+	std::cout << "Animal copy assignment operator called" << std::endl;
 	return (*this);
 }
 
 Animal::~Animal()
 {
-	std::cerr << "Animal destructor called" << std::endl;
+	std::cout << "Animal destructor called" << std::endl;
+}
+
+const std::string &Animal::getType() const
+{
+	return (type);
+}
+
+void Animal::setType(const std::string &type)
+{
+	this->type = type;
+}
+
+void Animal::makeSound() const
+{
+	std::cout << "...Generic animal noises..." << std::endl;
 }
