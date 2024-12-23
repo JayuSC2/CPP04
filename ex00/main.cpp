@@ -6,7 +6,7 @@
 /*   By: juitz <juitz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/20 19:05:00 by juitz             #+#    #+#             */
-/*   Updated: 2024/12/23 12:55:18 by juitz            ###   ########.fr       */
+/*   Updated: 2024/12/23 13:30:54 by juitz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,10 @@ int main()
 	j->makeSound();
 	meta->makeSound();
 
+	delete meta;
+	delete j;
+	delete i;
+
 	const WrongAnimal* metaWrong = new WrongAnimal();
 	//const Animal* j = new Dog();
 	const WrongAnimal* iWrong = new WrongCat();
@@ -35,6 +39,9 @@ int main()
 	iWrong->makeSound();
 	//j->makeSound();
 	metaWrong->makeSound();
+	
+	delete metaWrong;
+	delete iWrong;
 	
 	return (0);
 }
