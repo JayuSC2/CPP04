@@ -6,7 +6,7 @@
 /*   By: juitz <juitz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/20 19:05:00 by juitz             #+#    #+#             */
-/*   Updated: 2024/12/23 15:06:04 by juitz            ###   ########.fr       */
+/*   Updated: 2024/12/29 13:21:44 by juitz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,9 +26,10 @@ int main()
 		animals[i] = new Dog();
 	for (int i = numAnimals / 2; i < numAnimals; ++i)
 		animals[i] = new Cat();
-	for (int j = 0; j < numAnimals; ++j)
-		animals[j]->makeSound();
-	
+	for (int i = 0; i < numAnimals; ++i)
+		animals[i]->makeSound();
+	for (int i = 0; i < numAnimals > 0; ++i)
+		delete animals[i];
 	return (0);
 /* 	Brain brain;
 	

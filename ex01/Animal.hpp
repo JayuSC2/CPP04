@@ -6,7 +6,7 @@
 /*   By: juitz <juitz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/20 18:51:43 by juitz             #+#    #+#             */
-/*   Updated: 2024/12/23 12:32:00 by juitz            ###   ########.fr       */
+/*   Updated: 2024/12/29 13:22:08 by juitz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ class Animal
 		Animal();
 		Animal(const std::string &type);
 		Animal(const Animal &copy);
-		~Animal();
+		virtual ~Animal();
 		
 		Animal &operator=(const Animal &other);
 		
