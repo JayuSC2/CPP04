@@ -6,7 +6,7 @@
 /*   By: juitz <juitz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/20 19:05:00 by juitz             #+#    #+#             */
-/*   Updated: 2024/12/29 13:21:44 by juitz            ###   ########.fr       */
+/*   Updated: 2024/12/29 13:25:48 by juitz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,14 @@ int main()
 	for (int i = 0; i < numAnimals > 0; ++i)
 		delete animals[i];
 	return (0);
+
+/* 	const Animal* j = new Dog();
+	const Animal* i = new Cat();
+	delete j;//should not create a leak
+	delete i;
+	return 0; */
+
+
 /* 	Brain brain;
 	
 	try
