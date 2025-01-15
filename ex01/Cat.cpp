@@ -6,21 +6,21 @@
 /*   By: juitz <juitz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/23 12:04:13 by juitz             #+#    #+#             */
-/*   Updated: 2024/12/23 12:26:56 by juitz            ###   ########.fr       */
+/*   Updated: 2025/01/15 17:53:01 by juitz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Cat.hpp"
 #include "Animal.hpp"
 
-Cat::Cat() : Animal()
+Cat::Cat() : Animal("Cat")
 {
 	std::cout << "Cat default constructor called" << std::endl;
 }
 
-Cat::Cat(const std::string &type) : Animal("Cat")
+Cat::Cat(const std::string &type) : Animal(type)
 {
-	std::cout << "Cat type constructor called" << std::endl;
+	std::cout << "Cat parameterized constructor called" << std::endl;
 }
 
 Cat::Cat(const Cat &copy) : Animal(copy)

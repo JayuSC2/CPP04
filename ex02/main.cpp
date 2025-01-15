@@ -6,7 +6,7 @@
 /*   By: juitz <juitz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/20 19:05:00 by juitz             #+#    #+#             */
-/*   Updated: 2024/12/29 13:36:53 by juitz            ###   ########.fr       */
+/*   Updated: 2025/01/15 17:55:54 by juitz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,14 +32,12 @@ int main()
 		delete animals[i];
 	return (0);
 
-/* 	const Animal* j = new Dog();
+	const Animal* j = new Dog();
 	const Animal* i = new Cat();
-	delete j;//should not create a leak
+	delete j;
 	delete i;
-	return 0; */
 
-
-/* 	Brain brain;
+	Brain brain;
 	
 	try
 	{
@@ -52,5 +50,5 @@ int main()
 	{
 		std::cerr << "Exception: " << e.what() << std::endl;
 	}
-	return (0); */
+	return (0);
 }

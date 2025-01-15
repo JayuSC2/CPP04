@@ -6,7 +6,7 @@
 /*   By: juitz <juitz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/20 19:05:00 by juitz             #+#    #+#             */
-/*   Updated: 2024/12/29 13:25:48 by juitz            ###   ########.fr       */
+/*   Updated: 2025/01/15 17:40:55 by juitz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ int main()
 {
 	const int numAnimals = 10;
 	Animal* animals[numAnimals];
+	Dog basic;
+	Dog tmp = basic;
 	
 	for (int i = 0; i < numAnimals / 2; ++i)
 		animals[i] = new Dog();
@@ -30,7 +32,6 @@ int main()
 		animals[i]->makeSound();
 	for (int i = 0; i < numAnimals > 0; ++i)
 		delete animals[i];
-	return (0);
 
 /* 	const Animal* j = new Dog();
 	const Animal* i = new Cat();
@@ -39,7 +40,7 @@ int main()
 	return 0; */
 
 
-/* 	Brain brain;
+	Brain brain;
 	
 	try
 	{
@@ -52,5 +53,5 @@ int main()
 	{
 		std::cerr << "Exception: " << e.what() << std::endl;
 	}
-	return (0); */
+	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: juitz <juitz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/23 12:03:55 by juitz             #+#    #+#             */
-/*   Updated: 2024/12/23 14:52:24 by juitz            ###   ########.fr       */
+/*   Updated: 2025/01/15 17:59:49 by juitz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,5 @@ class Cat : public Animal
 
 		Cat &operator=(const Cat &other);
 
-		void makeSound() const override;
+		void makeSound() const;
 };

@@ -6,21 +6,21 @@
 /*   By: juitz <juitz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/20 19:19:10 by juitz             #+#    #+#             */
-/*   Updated: 2024/12/23 12:23:46 by juitz            ###   ########.fr       */
+/*   Updated: 2025/01/15 17:53:27 by juitz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Dog.hpp"
 #include "Animal.hpp"
 
-Dog::Dog() : Animal()
+Dog::Dog() : Animal("Dog")
 {
 	std::cout << "Dog default constructor called" << std::endl;
 }
 
-Dog::Dog(const std::string &type) : Animal("Dog")
+Dog::Dog(const std::string &type) : Animal(type)
 {
-	std::cout << "Dog type constructor called" << std::endl;
+	std::cout << "Dog parameterized constructor called" << std::endl;
 }
 
 Dog::Dog(const Dog &copy) : Animal(copy)
