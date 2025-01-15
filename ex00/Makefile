@@ -6,7 +6,7 @@
 #    By: juitz <juitz@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/12/20 18:42:37 by juitz             #+#    #+#              #
-#    Updated: 2024/12/23 12:54:27 by juitz            ###   ########.fr        #
+#    Updated: 2025/01/15 17:19:12 by juitz            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME = Polymorphism
 
 CXX = c++
 
-CFLAGS = -Wall -Wextra -Werror -std=c++98
+CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 
 SRCS =	main.cpp\
 		Animal.cpp\
@@ -29,7 +29,7 @@ RM = rm -rf
 
 all: $(NAME)
 $(NAME): $(OBJS)
-	@$(CXX) $(CFLAGS) $(OBJS) -o $(NAME)
+	@$(CXX) $(CXXFLAGS) $(OBJS) -o $(NAME)
 	@echo "Program ready!"
 
 clean: 

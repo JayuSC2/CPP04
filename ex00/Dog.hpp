@@ -6,7 +6,7 @@
 /*   By: juitz <juitz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/20 19:08:51 by juitz             #+#    #+#             */
-/*   Updated: 2024/12/23 12:32:12 by juitz            ###   ########.fr       */
+/*   Updated: 2025/01/15 17:19:31 by juitz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,5 @@ class Dog : public Animal
 
 		Dog &operator=(const Dog &other);
 
-		void makeSound() const override;
+		void makeSound() const;
 };
