@@ -6,7 +6,7 @@
 /*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/20 19:05:00 by juitz             #+#    #+#             */
-/*   Updated: 2025/01/16 15:19:11 by codespace        ###   ########.fr       */
+/*   Updated: 2025/01/16 16:39:08 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,16 +33,21 @@ int main()
 	for (int i = 0; i < numAnimals; ++i)
 		delete animals[i];
 
+	const WrongAnimal* metaWrong = new WrongAnimal();
+	metaWrong->makeSound();
+	delete metaWrong;
 /* 	const Animal* j = new Dog();
 	const Animal* i = new Cat();
-	delete j;//should not create a leak
+	delete j;
 	delete i;
-	return 0; */
+	return (0); */
 
+	Cat catWithBrain;
+	catWithBrain.getBrain()->setIdea(1, "200 IQ");
+    std::cout << catWithBrain.getBrain()->getIdea(1) << std::endl;
 
-	Brain brain;
 	
-	try
+/* 	try
 	{
 	std::cout << brain.getIdea(50) << std::endl;
 	brain.setIdea(50, "New idea");
@@ -52,6 +57,6 @@ int main()
 	catch (const std::out_of_range &e)
 	{
 		std::cerr << "Exception: " << e.what() << std::endl;
-	}
+	} */
 	return (0);
 }

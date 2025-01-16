@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   WrongAnimal.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: juitz <juitz@student.42.fr>                +#+  +:+       +#+        */
+/*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/23 12:44:40 by juitz             #+#    #+#             */
-/*   Updated: 2024/12/23 12:45:23 by juitz            ###   ########.fr       */
+/*   Updated: 2025/01/16 15:41:25 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ WrongAnimal::WrongAnimal()
 
 WrongAnimal::WrongAnimal(const std::string &type) : type(type)
 {
-	std::cout << "WrongAnimal type constructor called" << std::endl;
+	std::cout << "WrongAnimal parameterized constructor called" << std::endl;
 }
 
 WrongAnimal::WrongAnimal(const WrongAnimal &copy)

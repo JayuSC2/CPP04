@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Dog.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: juitz <juitz@student.42.fr>                +#+  +:+       +#+        */
+/*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/20 19:08:51 by juitz             #+#    #+#             */
-/*   Updated: 2025/01/15 17:59:54 by juitz            ###   ########.fr       */
+/*   Updated: 2025/01/16 15:51:34 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,7 @@ class Dog : public Animal
 
 		Dog &operator=(const Dog &other);
 
+		Brain* getBrain() const;
+		void setBrain(Brain* newBrain);
 		void makeSound() const;
 };

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Cat.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: juitz <juitz@student.42.fr>                +#+  +:+       +#+        */
+/*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/23 12:03:55 by juitz             #+#    #+#             */
-/*   Updated: 2025/01/15 17:59:49 by juitz            ###   ########.fr       */
+/*   Updated: 2025/01/16 15:51:13 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,8 @@ class Cat : public Animal
 		~Cat();
 
 		Cat &operator=(const Cat &other);
-
+		
+		Brain* getBrain() const;
+		void setBrain(Brain* newBrain);
 		void makeSound() const;
 };
