@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: juitz <juitz@student.42.fr>                +#+  +:+       +#+        */
+/*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/20 19:05:00 by juitz             #+#    #+#             */
-/*   Updated: 2025/01/15 17:55:54 by juitz            ###   ########.fr       */
+/*   Updated: 2025/01/16 17:28:47 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int main()
 		animals[i] = new Cat();
 	for (int i = 0; i < numAnimals; ++i)
 		animals[i]->makeSound();
-	for (int i = 0; i < numAnimals > 0; ++i)
+	for (int i = 0; i < numAnimals; ++i)
 		delete animals[i];
 	return (0);
 

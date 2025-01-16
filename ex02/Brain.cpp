@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Brain.cpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: juitz <juitz@student.42.fr>                +#+  +:+       +#+        */
+/*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/23 13:48:13 by juitz             #+#    #+#             */
-/*   Updated: 2024/12/23 14:25:35 by juitz            ###   ########.fr       */
+/*   Updated: 2025/01/16 17:15:42 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ Brain::Brain(const Brain &copy)
 	std::cout << "Brain copy constructor called" << std::endl;
 	for (int i = 0; i < 100; ++i)
 		ideas[i] = copy.ideas[i];
-	*this = copy;
+	//*this = copy;
 }
 Brain &Brain::operator=(const Brain &other)
 {

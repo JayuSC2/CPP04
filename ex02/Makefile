@@ -3,14 +3,14 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: juitz <juitz@student.42.fr>                +#+  +:+       +#+         #
+#    By: codespace <codespace@student.42.fr>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/12/20 18:42:37 by juitz             #+#    #+#              #
-#    Updated: 2025/01/15 17:50:29 by juitz            ###   ########.fr        #
+#    Updated: 2025/01/16 17:28:23 by codespace        ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = IDWTSTWOF
+NAME = AC
 
 CXX = c++
 
